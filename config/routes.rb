@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :closets
-  # collection do
-  #   get "catalog"
-  # end
+  resources :closets do
+   collection do
+     get "catalog"
+   end
+ end
   root 'closets#index'
 end
