@@ -5,6 +5,9 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+</head>
+<body>
   <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
   <script type="text/javascript">
           $(document).ready(function(){
@@ -13,9 +16,29 @@
               });
         });
   </script>
-</head>
-<body>
+  <div class="global_nav">
+    <!-- <img src="images/heart_yasu.png" height="40" width="40" alt=""> -->
+    <div class="inner">
+      <ul>
+        <li>
+          <%= link_to "トップページ", closets_path %>
+        </li>
+        <li>
+          <img src="/assets/nav_line.png" width="2" height="40" alt="">
+          <%= link_to "スタイルカタログ", catalog_closets_path %>
+        </li>
+        <li>
+          <img src="/assets/nav_line.png" width="2" height="40" alt="">
+          <%= link_to "アイテムリスト", item_list_closets_path %>
+        </li>
+        <li>
+          <img src="/assets/nav_line.png" width="2" height="40" alt="">
+          <%= link_to "お気に入りのリスト",favorite_list_closets_path %>
+        </li>
+      </ul>
+    </div>
 
+  </div>
 <%= yield %>
 
 </body>
