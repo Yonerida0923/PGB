@@ -226,3 +226,19 @@ h1 {
   height: 200px;
   background-color: blue;
 }
+
+// CatalogのCSSはここから
+.style {
+  width: 980px;
+}
+
+.style_picture {
+  margin: 0 auto;
+  clear: both;
+}
+
+.style_picture img {
+  width: 360px;
+  height: 500px;
+
+}
