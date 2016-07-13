@@ -13,6 +13,11 @@ h1 {
   font-size: 38px;
   font-family: "Comic Sans MS","Meiryo";
 }
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
 /*topのコンテンツはここから*/
 .contents {
   width: auto;
@@ -227,7 +232,13 @@ h1 {
   background-color: blue;
 }
 
+
 // ここからclosetのページ
+.closet_contents {
+  width: 100%;
+  height: 100%;
+}
+
 .closet_description {
   width: auto;
   height: auto;
@@ -249,8 +260,76 @@ h1 {
   background-color: green;
 }
 
-.closet_imgs {
+.background_image {
+  margin: 0 auto;
   width: 100%;
-  height: 800px;
-  background-color: orange;
+  height: auto;
+  background-image:url("/assets/wood5.jpg");
+}
+
+.closet_imgs {
+  margin: 0 auto;
+  width: 1080px;
+  height: 100%;
+}
+.closet_imgs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.closet_imgs ul li {
+
+}
+
+.closet_imgs ul li img {
+  width: 240px;
+  height: 240px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
+// CatalogのCSSはここから
+.catalog {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.style_picture {
+  margin: 0 auto;
+  width: 100%;
+  height: 0 auto;
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery  ul {
+  list-style: none;
+  width: 1080px;
+  margin:  0 auto;
+  padding: 0 auto;
+}
+
+.gallery ul li  {
+  width: 330px;
+  height: 400px;
+  margin: 5px 5px 5px 5px;
+
+
+  display: inline-block;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.gallery ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery ul li img {
+  width: 330px;
+  height:400px;
+  margin: 0;
+  display: block;
+  float: left;
 }
