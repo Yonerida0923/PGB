@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :closets do
    collection do
      get "catalog"
-     get "item_list"
+     get "closet"
      get "favorite_list"
    end
  end

@@ -226,3 +226,31 @@ h1 {
   height: 200px;
   background-color: blue;
 }
+
+// ここからclosetのページ
+.closet_description {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.closet_title {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: red;
+}
+
+.closet_sentence {
+  width: 100%;
+  height: 80px;
+  background-color: green;
+}
+
+.closet_imgs {
+  width: 100%;
+  height: 800px;
+  background-color: orange;
+}
