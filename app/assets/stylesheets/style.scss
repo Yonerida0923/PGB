@@ -228,17 +228,51 @@ h1 {
 }
 
 // CatalogのCSSはここから
-.style {
-  width: 980px;
+.catalog {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
 }
 
 .style_picture {
   margin: 0 auto;
-  clear: both;
+  width: 100%;
+  height: 0 auto;
 }
 
-.style_picture img {
-  width: 360px;
-  height: 500px;
+.gallery {
+  width: 100%;
+}
+
+.gallery  ul {
+  list-style: none;
+  width: 1080px;
+  margin:  0 auto;
+  padding: 0 auto;
+}
+
+.gallery ul li  {
+  width: 330px;
+  height: 400px;
+  margin: 5px 5px 5px 5px;
+
+
+  display: inline-block;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.gallery ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery ul li img {
+  width: 330px;
+  height:400px;
+  margin: 0;
+  display: block;
+  float: left;
+}
+
+.gallery ul li img:last-child {
 
 }

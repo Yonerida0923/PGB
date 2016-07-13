@@ -5,5 +5,9 @@ class ClosetsController < ApplicationController
   def catalog
   end
 
+  def item_list
+  end
 
+  def favorite_list
+  end
 end
